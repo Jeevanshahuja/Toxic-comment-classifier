@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxic Comment Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ARE YOU TOXIC ENOUGH?</h1>
+    <form action="/predict" method="post">
+        <textarea name="text" rows="10" cols="50" placeholder="Enter text here..."></textarea><br>
+        <input type="submit" value="CLASSIFY">
+    </form>
+</body>
+</html>

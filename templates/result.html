@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <h1>Classification Result</h1>
+    <p><strong>Input Text:</strong> "{{ text }}"</p>
+    
+    <!-- Logic to determine if text is toxic or not toxic -->
+    {% if results['toxic'] or results['severe_toxic'] or results['obscene'] or results['threat'] or results['insult'] or results['identity_hate'] %}
+        <div class="result-message">
+            <p>You Are Toxic..</p>
+        </div>
+    {% else %}
+        <div class="result-message">
+            <p>Relax, it's all clean – nothing toxic here!</p>
+        </div>
+    {% endif %}
+
+    <a href="/">CLASSIFY AGAIN</a>
+</body>
+</html>

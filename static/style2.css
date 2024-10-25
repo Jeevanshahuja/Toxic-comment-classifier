@@ -1,0 +1,45 @@
+html {
+    background: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(195, 237, 106);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 3px 3px 3px red, 0 0 25px rgb(6, 18, 95);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.result-message {
+    font-size: 1.8em;
+    color: rgb(242, 244, 248);
+    background: linear-gradient(45deg, rgba(66,21,29,1) 0%, rgba(17,17,52,1) 100%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    font-size: 1.4em;
+    padding: 10px 20px;
+    background-color: #f49d51;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 30px;
+}
